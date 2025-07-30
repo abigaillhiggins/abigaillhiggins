@@ -14,6 +14,11 @@
 
 ---
 
+###🔥 GitHub Streak Stats
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=abigaillhiggins&theme=tokyonight)](https://github.com/abigaillhiggins)
+
+---
+
 ### 🔭 Projects I'm Working On
 
 - 🤖 **Pepper Robot**: Teaching Pepper to interact with humans using LLMs
