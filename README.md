@@ -25,10 +25,6 @@
 
 ---
 
-## 🔥 GitHub Streak
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=abigaillhiggins&theme=tokyonight&hide_border=true)](https://github.com/abigaillhiggins)
-
 
 ### 🔭 Projects I'm Working On
 
