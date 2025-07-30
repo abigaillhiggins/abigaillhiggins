@@ -19,11 +19,7 @@
 
 ---
 
-## 🏆 GitHub Trophies
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=abigaillhiggins&theme=tokyonight&row=1&margin-w=10)](https://github.com/ryo-ma/github-profile-trophy)
-
----
 
 
 ### 🔭 Projects I'm Working On
