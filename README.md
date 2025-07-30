@@ -1,4 +1,4 @@
-## Hi there 👋 I'm Abigail
+## Hi there 👋 I'm Abi
 
 🎓 Mechatronic Systems Engineer from ANU  
 🧠 Emphasis on LLMs and Agentic apps
