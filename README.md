@@ -24,5 +24,5 @@
 
 ### 🎵 Fun Fact
 
-I hold a Level 1 Rocketry Certification and a AmusA Piano Diploma 🎻🚀
+I hold a Level 1 Rocketry Certification and a Piano Diploma 🎻🚀
 
