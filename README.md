@@ -12,12 +12,7 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=abigaillhiggins&layout=compact&langs_count=6&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
 
 
----
 
-###🔥 GitHub Streak Stats
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=abigaillhiggins&theme=tokyonight)](https://github.com/abigaillhiggins)
-
----
 
 
 
