@@ -1,6 +1,6 @@
 ## Hi there 👋 I'm Abigail
 
-🎓 Final-year Mechatronics Engineering student at ANU  
+🎓 Mechatronic Systems Engineer from ANU  
 🧠 AI researcher | 🚀 Robotics + Accessibility enthusiast  
 💻 Currently building agentic AI tools and autonomous UI generators  
 🌏 Based in Canberra | 🇦🇺
