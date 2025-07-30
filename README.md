@@ -12,11 +12,6 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=abigaillhiggins&layout=compact&langs_count=6&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
 
 
-
-
-
-
-
 ### 🔭 Projects I'm Working On
 
 - 🤖 **Pepper Robot**: Teaching Pepper to interact with humans using LLMs
@@ -24,8 +19,4 @@
 - 🌐 **RoboTalk**: Science communication blog about AI + robotics
 
 
-
-### 🎵 Fun Fact
-
-I hold a Level 1 Rocketry Certification and a Piano Diploma 🎻🚀
 
