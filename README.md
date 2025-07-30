@@ -1,7 +1,7 @@
 ## Hi there 👋 I'm Abigail
 
 🎓 Mechatronic Systems Engineer from ANU  
-🧠 AI researcher | 🚀 Robotics + Accessibility enthusiast  
+🧠 Emphasis on LLMs and Agentic apps
 💻 Currently building agentic AI tools and autonomous UI generators  
 🌏 Based in Canberra | 🇦🇺
 
