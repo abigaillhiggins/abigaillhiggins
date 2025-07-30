@@ -19,6 +19,17 @@
 
 ---
 
+## 🏆 GitHub Trophies
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=abigaillhiggins&theme=tokyonight&row=1&margin-w=10)](https://github.com/ryo-ma/github-profile-trophy)
+
+---
+
+## 🔥 GitHub Streak
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=abigaillhiggins&theme=tokyonight&hide_border=true)](https://github.com/abigaillhiggins)
+
+
 ### 🔭 Projects I'm Working On
 
 - 🤖 **Pepper Robot**: Teaching Pepper to interact with humans using LLMs
