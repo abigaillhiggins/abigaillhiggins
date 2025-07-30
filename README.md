@@ -1,16 +1,29 @@
-## Hi there 👋
+## Hi there 👋 I'm Abigail
 
-<!--
-**abigaillhiggins/abigaillhiggins** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 Final-year Mechatronics Engineering student at ANU  
+🧠 AI researcher | 🚀 Robotics + Accessibility enthusiast  
+💻 Currently building agentic AI tools and autonomous UI generators  
+🌏 Based in Canberra | 🇦🇺
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 📊 GitHub Stats
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=abigaillhiggins&layout=compact&langs_count=6&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Abigail's GitHub stats](https://github-readme-stats.vercel.app/api?username=abigaillhiggins&show_icons=true&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
+
+---
+
+### 🔭 Projects I'm Working On
+
+- 🤖 **Pepper Robot**: Teaching Pepper to interact with humans using LLMs
+- 🧠 **Mistral UI Generator**: Streamlined UI generation from prompts using Mistral
+- 🌐 **RoboTalk**: Science communication blog about AI + robotics
+
+
+
+### 🎵 Fun Fact
+
+I hold a Level 1 Rocketry Certification and a AmusA Piano Diploma 🎻🚀
+
