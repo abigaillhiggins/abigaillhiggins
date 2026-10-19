@@ -35,7 +35,11 @@ jobs:
           filename: metrics.languages.svg
           base: ""
           config_timezone: Australia/Sydney
+          repositories: 300
           repositories_affiliations: owner, collaborator, organization_member
+          # Every identity my commits are authored under; indepth mode only
+          # counts commits that match one of these.
+          commits_authoring: abigaillhiggins, Abigail Higgins, abigaillhiggins@users.noreply.github.com, 134818000+abigaillhiggins@users.noreply.github.com, abigailhiggins@era.computer, abigailhiggins@era.world
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_sections: most-used
