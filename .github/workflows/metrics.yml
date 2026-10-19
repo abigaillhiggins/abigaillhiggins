@@ -1,11 +1,11 @@
-# Builds metrics.languages.svg for the profile README: the languages of the
-# repositories I own, collaborate on or am an organization member of
-# (private ones included). Only aggregate percentages are rendered;
-# no repository names or code leave the run.
+# Builds metrics.languages.svg for the profile README with scripts/languages.py:
+# the languages of every repository I own, collaborate on or am an organization
+# member of (private ones included), weighted by my commits in each. Only
+# aggregate percentages are rendered; no repository names or code leave the run.
 #
 # Needs a repository secret METRICS_TOKEN: a classic personal access token with
-# the `repo`, `read:org` and `read:user` scopes, authorized for SSO on any
-# organization that enforces it.
+# the `repo` and `read:org` scopes, authorized for SSO on any organization that
+# enforces it.
 name: Metrics
 
 on:
@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [.github/workflows/metrics.yml]
+    paths: [.github/workflows/metrics.yml, scripts/languages.py]
 
 permissions:
   contents: write
@@ -26,21 +26,24 @@ concurrency:
 jobs:
   languages:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 30
     steps:
-      - uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ github.token }}
-          filename: metrics.languages.svg
-          base: repositories # languages read the repositories this section fetches
-          config_timezone: Australia/Sydney
-          repositories: 300
-          repositories_affiliations: owner, collaborator, organization_member
-          plugin_languages: yes
-          plugin_languages_indepth: no
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage
-          plugin_languages_limit: 8
-          plugin_languages_threshold: 2%
-          plugin_languages_ignored: html, css, jupyter notebook
+      - uses: actions/checkout@v4
+
+      - name: Render languages chart
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_LOGIN: ${{ github.repository_owner }}
+        run: python3 -I scripts/languages.py metrics.languages.svg
+
+      - name: Commit chart if it changed
+        run: |
+          git add metrics.languages.svg
+          if git diff --cached --quiet; then
+            echo "Chart unchanged"
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "chore: update languages chart"
+          git push
