@@ -33,7 +33,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ github.token }}
           filename: metrics.languages.svg
-          base: ""
+          base: repositories # languages read the repositories this section fetches
           config_timezone: Australia/Sydney
           repositories: 300
           repositories_affiliations: owner, collaborator, organization_member
