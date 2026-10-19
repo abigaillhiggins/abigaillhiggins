@@ -144,7 +144,7 @@ def render(rows: list[tuple[str, float]]) -> str:
         cy = legend_y + (i // columns) * row_h
         parts.append(f'<circle cx="{cx + 6}" cy="{cy - 4}" r="5" fill="{color(name)}"/>')
         parts.append(f'<text x="{cx + 18}" y="{cy}">{html.escape(name)} '
-                     f'<tspan fill="#999">{percent(share)}</tspan></text>')
+                     f'<tspan fill="#999">{html.escape(percent(share))}</tspan></text>')
     parts.append("</svg>")
     return "".join(parts)
 
