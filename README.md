@@ -7,6 +7,10 @@
 
 ---
 
+### 🛠️ Languages I write
+
+![Languages I write most, measured from my commits](metrics.languages.svg)
+
 
 
 

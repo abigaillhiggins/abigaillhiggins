@@ -1,0 +1,46 @@
+# Builds metrics.languages.svg for the profile README: the languages I write,
+# measured from my own commits across personal, collaborator and organization
+# repositories (private ones included). Only aggregate percentages are rendered;
+# no repository names or code leave the run.
+#
+# Needs a repository secret METRICS_TOKEN: a classic personal access token with
+# the `repo`, `read:org` and `read:user` scopes, authorized for SSO on any
+# organization that enforces it.
+name: Metrics
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # daily, 04:00 in Canberra (AEST)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/metrics.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: metrics
+  cancel-in-progress: true
+
+jobs:
+  languages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ github.token }}
+          filename: metrics.languages.svg
+          base: ""
+          config_timezone: Australia/Sydney
+          repositories_affiliations: owner, collaborator, organization_member
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          plugin_languages_threshold: 2%
+          plugin_languages_ignored: html, css, jupyter notebook
+          plugin_languages_analysis_timeout: 45
