@@ -24,7 +24,8 @@ import urllib.request
 from collections import Counter
 
 API = "https://api.github.com"
-# Every language is shown: no ignore list, no limit, no "Other" bucket.
+# The top LIMIT languages are shown, as shares of everything; the rest are omitted.
+LIMIT = 12
 
 # GitHub's linguist colours for the languages likely to show.
 COLORS = {
@@ -114,7 +115,7 @@ def shares(totals: Counter) -> list[tuple[str, float]]:
     grand = sum(totals.values())
     if not grand:
         return []
-    return [(name, value / grand) for name, value in totals.most_common()]
+    return [(name, value / grand) for name, value in totals.most_common(LIMIT)]
 
 
 def render(rows: list[tuple[str, float]]) -> str:
