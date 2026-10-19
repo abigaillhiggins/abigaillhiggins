@@ -1,6 +1,6 @@
-# Builds metrics.languages.svg for the profile README: the languages I write,
-# measured from my own commits across personal, collaborator and organization
-# repositories (private ones included). Only aggregate percentages are rendered;
+# Builds metrics.languages.svg for the profile README: the languages of the
+# repositories I own, collaborate on or am an organization member of
+# (private ones included). Only aggregate percentages are rendered;
 # no repository names or code leave the run.
 #
 # Needs a repository secret METRICS_TOKEN: a classic personal access token with
@@ -37,14 +37,10 @@ jobs:
           config_timezone: Australia/Sydney
           repositories: 300
           repositories_affiliations: owner, collaborator, organization_member
-          # Every identity my commits are authored under; indepth mode only
-          # counts commits that match one of these.
-          commits_authoring: abigaillhiggins, Abigail Higgins, abigaillhiggins@users.noreply.github.com, 134818000+abigaillhiggins@users.noreply.github.com, abigailhiggins@era.computer, abigailhiggins@era.world
           plugin_languages: yes
-          plugin_languages_indepth: yes
+          plugin_languages_indepth: no
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
           plugin_languages_limit: 8
           plugin_languages_threshold: 2%
           plugin_languages_ignored: html, css, jupyter notebook
-          plugin_languages_analysis_timeout: 45

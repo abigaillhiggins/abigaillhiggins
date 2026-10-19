@@ -7,9 +7,9 @@
 
 ---
 
-### 🛠️ Languages I write
+### 🛠️ Languages I work in
 
-![Languages I write most, measured from my commits](metrics.languages.svg)
+![Languages across the repositories I work in](metrics.languages.svg)
 
 
 
